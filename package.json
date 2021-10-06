@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod  --base-href ./ && cp CNAME dist/CNAME",
-    "build-dev": "ng build --prod  --base-href ./ && cp CNAME dist/CNAME",
+    "build": "ng build --prod  --base-href ./ && scp CNAME ",
+    "build-dev": "ng build --prod  --base-href ./ && scp CNAME ",
     "test": "ng test",
     "lint": "ng lint --force",
     "e2e": "ng e2e"
@@ -31,7 +31,7 @@
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1102.7",
+    "@angular-devkit/build-angular": "^0.1102.14",
     "@angular/cli": "^11.2.7",
     "@angular/compiler-cli": "11.2.8",
     "@angular/language-service": "11.2.8",
